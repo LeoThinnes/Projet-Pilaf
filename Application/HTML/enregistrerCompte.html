@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Société PILAF</title>
+    <link rel="stylesheet" href="../CSS/fonts.css">
+    <link rel="stylesheet" href="../CSS/creerClient.css">
+</head>
+<body>
+    <header>
+        <h1 class="titre">Société PILAF</h1>
+        <div class="icons">
+            <a href="./menu.html"><img src="../Images/home-with-hearth.png" alt="Retour" title="Menu Principal"></a>    
+            <a href="../index.html"><img src="../Images/black-user-shape.png" alt="Déconnexion" title="Déconnexion"></a>
+        </div>
+    </header>
+
+    <div class="menu">
+        <h2>Banque ></h2>
+        <div class="bouton" id="creer">
+            <a href="./enregistrerCompte.html">Enregistrer</a>
+        </div>
+        <div class="bouton">
+            <a href="./consulterVirements.html">Virements</a>
+        </div>
+    </div>
+
+    <div class="formulaire">
+        <form action="https://www.cic.fr/fr/index.html" target="_blank" method="post">
+            <div class="colonne">
+                <div id="identite">
+                    <h3>Informations du compte</h3>
+                    <div id="civilite">
+                        <label>Banque <br></label>
+                        <input type="search" list="banques" placeholder="CIC" required>
+                        <datalist id="banques">
+                            <option value="Société Générale"></option>
+                            <option value="BNP Paribas"></option>
+                            <option value="La Banque Postale"></option>
+                            <option value="HSBC"></option>
+                            <option value="LCL"></option>
+                            <option value="Allianz Banque"></option>
+                            <option value="AXA Banque"></option>
+                            <option value="CIC"></option>
+                        </datalist>
+                    </div>
+                    <div id="nom">
+                        <label>Nom du compte <br></label>
+                        <input type="text" placeholder="PILAF" required>
+                    </div>
+                    <div id="prenom">
+                        <label>Numéro de compte <br></label>
+                        <input type="text" placeholder="0504015745" required>
+                    </div>
+                    <div id="mdp">
+                        <label>IBAN <br></label>
+                        <input type="text" pattern="[a-zA-Z]{2}[0-9]{2}[a-zA-Z0-9]{4}[0-9]{7}([a-zA-Z0-9]?){0,16}" placeholder="MR1300002054054504504505132" required>
+                    </div>
+                    <div id="enregistrer">
+                        <button type="submit">Enregistrer</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Société PILAF</title>
+    <link rel="stylesheet" href="../CSS/fonts.css">
+    <link rel="stylesheet" href="../CSS/consulterStock.css">
+</head>
+<body>
+    <header>
+        <h1 class="titre">Société PILAF</h1>
+        <div class="icons">
+            <a href="./menu.html"><img src="../Images/home-with-hearth.png" alt="Retour" title="Menu Principal"></a>    
+            <a href="../index.html"><img src="../Images/black-user-shape.png" alt="Déconnexion" title="Déconnexion"></a>
+        </div>
+    </header>
+
+    <div class="menu">
+        <h2>Stock ></h2>
+        <div class="bouton">
+            <a href="./creerCommande.html">Créer Commande</a>
+        </div>
+        <div class="bouton">
+            <a href="./modifierCommande.html">Modifier commande</a>
+        </div>
+        <div class="bouton">
+            <a href="./consulterCommandes.html">Consulter Commande</a>
+        </div>
+        <div class="bouton" id="creer">
+            <a href="./receptionnerLivraison.html">Réceptionner Livraison</a>
+        </div>
+        <div class="bouton">
+            <a href="./enregistrerMouvementStock.html">Mouvement Stock</a>
+        </div>
+        <div class="bouton">
+            <a href="./consulterStock.html">Consulter Stock</a>
+        </div>
+    </div>
+
+    <div class="ligne">
+        <div class="recherche">
+            <label>Rechercher par numéro de commande<br></label>
+            <input type="search" placeholder="0214">
+        </div>
+        <div class="recherche">
+            <label>Rechercher par fournisseur<br></label>
+            <input type="search" placeholder="Biodis">
+        </div>
+        <div class="recherche">
+            <label>Rechercher par produit<br></label>
+            <input type="search" placeholder="Fraise">
+        </div>
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <th>Numéro de commande</th>
+                <th>Numéro de facture</th>
+                <th>Fournisseur</th>
+                <th>Produit</th>
+                <th>Date de commande</th>
+                <th>Date de livraison</th>
+                <th>Ajout au stock</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0214</td>
+                <td>0526</td>
+                <td>Biodis</td>
+                <td>Fraise</td>
+                <td>27/05/2020</td>
+                <td>27/05/2020</td>
+                <td><a href="./enregistrerMouvementStock.html"><img src="../Images/plus.png" alt="Ajouter" title="Ajouter les produits au stock"></a></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

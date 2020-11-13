@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Société PILAF</title>
+    <link rel="stylesheet" href="../CSS/fonts.css">
+    <link rel="stylesheet" href="../CSS/modifierFournisseur.css">
+</head>
+<body>
+    <header>
+        <h1 class="titre">Société PILAF</h1>
+        <div class="icons">
+            <a href="./menu.html"><img src="../Images/home-with-hearth.png" alt="Retour" title="Menu Principal"></a>    
+            <a href="../index.html"><img src="../Images/black-user-shape.png" alt="Déconnexion" title="Déconnexion"></a>
+        </div>
+    </header>
+
+    <div class="menu">
+        <h2>Fournisseurs ></h2>
+        <div class="bouton">
+            <a href="./creerFournisseur.html">Créer</a>
+        </div>
+        <div class="bouton" id="creer">
+            <a href="./modifierFournisseur.html">Modifier</a>
+        </div>
+        <div class="bouton">
+            <a href="./consulterFournisseur.html">Consulter</a>
+        </div>
+        <div class="bouton">
+            <a href="./catalogueFournisseur.html">Catalogue</a>
+        </div>
+    </div>
+
+    <div class="formulaire">
+        <form action="./modifierFournisseur.html" method="post">
+            <div id="recherche">
+                <label>Rechercher <br></label>
+                <input type="search" required>
+            </div>
+            <div class="colonne">
+                <div id="identite">
+                    <h3>Informations de société</h3>
+                    <div id="type">
+                        <label>Type <br></label>
+                        <input type="search" list="types" placeholder="SA" required>
+                        <datalist id="types">
+                            <option value="SA"></option>
+                            <option value="SAS"></option>
+                            <option value="SARL"></option>
+                        </datalist>
+                    </div>
+                    <div id="nom">
+                        <label>Nom <br></label>
+                        <input type="text" placeholder="Biodis" required>
+                    </div>
+                    <div id="secteur">
+                        <label>Secteur <br></label>
+                        <input type="text" placeholder="Grossiste" required>
+                    </div>
+                </div>
+                <div id="contact">
+                    <h3>Informations de contact</h3>
+                    <div id="nom_responsable">
+                        <label>Nom du contact <br></label>
+                        <input type="text" placeholder="FRANCK Edouard" required>
+                    </div>
+                    <div id="telephone">
+                        <label>Téléphone <br></label>
+                        <input type="tel" placeholder="01 02 03 04 05" required>
+                    </div>
+                    <div id="mail">
+                        <label>Adresse e-mail <br></label>
+                        <input type="email" placeholder="franck@biodis.com" required>
+                    </div>
+                </div>
+                <div id="adresse">
+                    <h3>Informations d'adresse</h3>
+                    <div id="numero">
+                        <label>Numéro <br></label>
+                        <input type="number" placeholder="25" required>
+                    </div>
+                    <div id="adresse1">
+                        <label>Adresse <br></label>
+                        <input type="text" placeholder="rue de biodis" required>
+                    </div>
+                    <div id="code_postal">
+                        <label>Code Postal <br></label>
+                        <input type="number" placeholder="95000" required>
+                    </div>
+                    <div id="ville">
+                        <label>Ville <br></label>
+                        <input type="text" placeholder="Paris" required>
+                    </div>
+                    <div id="pays">
+                        <label>Pays <br></label>
+                        <input type="search" list="liste_pays" placeholder="France" required>
+                        <datalist id="liste_pays">
+                            <option value="Angleterre"></option>
+                            <option value="Espagne"></option>
+                            <option value="France"></option>
+                        </datalist>
+                    </div>
+                    <div id="enregistrer">
+                        <button type="submit">Enregistrer</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

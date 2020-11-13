@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Société PILAF</title>
+    <link rel="stylesheet" href="../CSS/fonts.css">
+    <link rel="stylesheet" href="../CSS/consulterFournisseur.css">
+</head>
+<body>
+    <header>
+        <h1 class="titre">Société PILAF</h1>
+        <div class="icons">
+            <a href="./menu.html"><img src="../Images/home-with-hearth.png" alt="Retour" title="Menu Principal"></a>    
+            <a href="../index.html"><img src="../Images/black-user-shape.png" alt="Déconnexion" title="Déconnexion"></a>
+        </div>
+    </header>
+
+    <div class="menu">
+        <h2>Personnel ></h2>
+        <div class="bouton">
+            <a href="./creerPersonnel.html">Créer</a>
+        </div>
+        <div class="bouton">
+            <a href="./modifierPersonnel.html">Modifier</a>
+        </div>
+        <div class="bouton" id="creer">
+            <a href="./consulterPersonnel.html">Consulter</a>
+        </div>
+        <div class="bouton">
+            <a href="./enregistrerHoraires.html">Horaires</a>
+        </div>
+    </div>
+
+    <div id="recherche">
+        <label>Rechercher <br></label>
+        <input type="search" placeholder="PILAF">
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Poste</th>
+                <th>Type de contrat</th>
+                <th>Durée du contrat</th>
+                <th>Durée hebdomadaire</th>
+                <th>Salaire</th>
+                <th>Horaires</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>PILAF</td>
+                <td>Didier</td>
+                <td>Directeur</td>
+                <td>CDI</td>
+                <td>Indéterminé</td>
+                <td>35h</td>
+                <td>10 000</td>
+                <td><a href="./enregistrerHoraires.html"><img src="../Images/plus.png" alt="Ajouter" title="Ajouter des horaires"></a></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

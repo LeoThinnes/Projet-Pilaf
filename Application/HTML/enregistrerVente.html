@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Société Pilaf</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/enregistrerVente.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/fonts.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="titre">Société PILAF</h1>
+      <div class="icons">
+          <a href="./menu.html"><img src="../Images/home-with-hearth.png" alt="Retour" title="Menu Principal"></a>    
+          <a href="../index.html"><img src="../Images/black-user-shape.png" alt="Déconnexion" title="Déconnexion"></a>
+      </div>
+  </header>
+  <div class="container">
+    <form class="test" action="enregistrerVente.html" method="post">
+      <div id="titre">
+        <h2>ENREGISTRER VENTE</h2>
+      </div>
+      <div id="ligneProduit">
+
+        <div id="Ref">
+          <label>Référence produit : <br></label>
+          <input type="search" required name="ref_prod" title="Veuillez saisir la référence du produit" placeholder="001">
+        </div>
+        <div id="Lib">
+          <label>Libellé produit : <br>Fraise</label>
+        </div>
+        <div id="Quantité">
+          <label>Quantité : <br></label>
+          <input type="number" min="1" placeholder="1">
+        </div>
+        <div id="PrixU">
+          <label>Prix U. : <br>2.90</label>
+        </div>
+        <div id="PrixHT">
+          <label>Prix HT : <br>2.90</label>
+        </div>
+        <div id="PrixTTC">
+          <label>Prix TTC : <br>3.50</label>
+        </div>
+
+      </div>
+
+      <div id="Ajout">
+        <input type="button" value="+">
+      </div>
+
+      <div id="ligneTotaux">
+
+        <div id="TotHT">
+          <label>Total HT : <br>2.90</label>
+        </div>
+        <div id="TotTaxes">
+          <label>Total Taxes : <br>0.60</label>
+        </div>
+        <div id="TotTTC">
+          <label>Total TTC : <br>3.50</label>
+        </div>
+        <div id="Remises">
+          <label>Remises : <br>0.00</label>
+        </div>
+      </div>
+
+      <div id="Fidelite">
+        <label>Carte de fidélité : <br></label>
+        <input type="text" placeholder="0528">
+      </div>
+
+      <div class="bouton">
+        <a href="./creerClient.html">Créer client</a>
+      </div>
+
+      <div id="btn_enreg">
+        <input type="submit" value="Enregistrer">
+      </div>
+    </form>
+    </div>
+  </body>
+</html>

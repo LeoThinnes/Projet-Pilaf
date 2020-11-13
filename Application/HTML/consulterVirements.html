@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Société PILAF</title>
+    <link rel="stylesheet" href="../CSS/fonts.css">
+    <link rel="stylesheet" href="../CSS/consulterVirements.css">
+</head>
+<body>
+    <header>
+        <h1 class="titre">Société PILAF</h1>
+        <div class="icons">
+            <a href="./menu.html"><img src="../Images/home-with-hearth.png" alt="Retour" title="Menu Principal"></a>    
+            <a href="../index.html"><img src="../Images/black-user-shape.png" alt="Déconnexion" title="Déconnexion"></a>
+        </div>
+    </header>
+
+    <div class="menu">
+        <h2>Banque ></h2>
+        <div class="bouton">
+            <a href="./enregistrerCompte.html">Enregistrer</a>
+        </div>
+        <div class="bouton" id="creer">
+            <a href="./consulterVirements.html">Virements</a>
+        </div>
+    </div>
+
+    <div class="formulaire">
+        <form action="./consulterVirements.html" method="post">
+            <div class="colonne">
+                <div id="identite">
+                    <h3>Paiement par virement</h3>
+                    <div id="nom">
+                        <label>Compte Bancaire <br></label>
+                        <select>
+                            <option>Compte CIC</option>
+                        </select>
+                    </div>
+                    <div id="prenom">
+                        <label>Destinataire IBAN<br></label>
+                        <input type="search" placeholder="MR1300002054054504504505132" required>
+                    </div>
+                    <div id="telephone">
+                        <label>Montant <br></label>
+                        <input type="number" placeholder="600" required>
+                    </div>
+                    <div id="enregistrer">
+                        <button type="submit">Enregistrer</button>
+                    </div>
+                </div>
+                <div id="poste">
+                    <h3>Consultation des virements</h3>
+                    <div class="ligne">
+                        <div class="recherche">
+                            <label>Rechercher par numéro de facture <br></label>
+                            <input type="search" placeholder="0526">
+                        </div>
+                        <div class="recherche">
+                            <label>Rechercher par destinataire <br></label>
+                            <input type="search" placeholder="PILAF">
+                        </div>
+                        <div class="recherche">
+                            <label>Rechercher par date <br></label>
+                            <input type="date">
+                        </div>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Numéro de transaction</th>
+                                <th>Numéro de facture</th>
+                                <th>Date</th>
+                                <th>Émetteur</th>
+                                <th>Destinataire</th>
+                                <th>Montant</th>
+                                <th>Récapitulatif</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>05478</td>
+                                <td>0526</td>
+                                <td>27/05/2020</td>
+                                <td>Compte CIC</td>
+                                <td>PILAF Didier</td>
+                                <td>600</td>
+                                <td>
+                                    <a href="#"><img src="../Images/1200px-PDF_file_icon.svg.webp" alt="PDF" title="Récapitulatif en PDF"></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

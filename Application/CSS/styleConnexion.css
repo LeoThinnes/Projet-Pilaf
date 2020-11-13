@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #228E46;
+  color : white;
+  font-family: 'Gotham Ultra';
+  font-size: 70px;
+}
+
+
+form{
+  width: 500px;
+  border: 2px solid #9A6A54;
+  border-radius: 5%;
+  padding: 10px;
+  background-color: white;
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form #titre{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #00B050;
+  margin-bottom: 20px;
+  font-family: 'Gotham Medium';
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+form #btn_choix{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  color: #00B050;
+  margin-bottom: 20px;
+}
+
+form #btn_choix input{
+  border-radius: 25px;
+  border: 1px solid #9A6A54;
+  color: #00B050;
+  font-family: 'Gotham Medium';
+  font-size: 20px;
+  width: 200px;
+  cursor: pointer;
+}
+
+form #btn_choix input:checked {
+  background-color: rgb(34, 145, 70, 0.65);
+}
+
+form #Nom{
+  text-align: left;
+  margin-left: 50px;
+  color: #00B050;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-family: 'Gotham Book';
+}
+
+form #Nom input{
+width: 400px;
+border-radius: 25px;
+border: 1px solid #9A6A54;
+height: 30px;
+padding-left: 15px;
+}
+
+form #Mdp{
+  text-align: left;
+  margin-left: 50px;
+  color: #00B050;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-family: 'Gotham Book';
+}
+
+form #Mdp input{
+width: 400px;
+border-radius: 25px;
+border: 1px solid #9A6A54;
+height: 30px;
+padding-left: 15px;
+}
+
+form #btn_valider{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form #btn_valider input{
+  border-radius: 25px;
+  border: 1px solid #9A6A54;
+  font-size: 20px;
+  font-family: 'Gotham Medium';
+  color: #00B050;
+  height: 30px;
+  width: 200px;
+  cursor: pointer;
+}
+
+#btn_valider input:active {
+  background-color: rgb(34, 145, 70, 0.65);
+}
+
+.bouton {
+  align-self: center;
+  border: 3px solid #9a6a54;
+  border-radius: 25px;
+  width: 180px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.bouton:last-child {
+  margin-right: 0;
+}
+
+.bouton a {
+  text-decoration: none;
+  font-family: 'Gotham Medium';
+  color: #00B050;
+  font-size: 20px;
+}

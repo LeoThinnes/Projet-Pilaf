@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Société PILAF</title>
+    <link rel="stylesheet" href="../CSS/fonts.css">
+    <link rel="stylesheet" href="../CSS/creerPersonnel.css">
+</head>
+<body>
+    <header>
+        <h1 class="titre">Société PILAF</h1>
+        <div class="icons">
+            <a href="./menu.html"><img src="../Images/home-with-hearth.png" alt="Retour" title="Menu Principal"></a>    
+            <a href="../index.html"><img src="../Images/black-user-shape.png" alt="Déconnexion" title="Déconnexion"></a>
+        </div>
+    </header>
+
+    <div class="menu">
+        <h2>Personnel ></h2>
+        <div class="bouton" id="creer">
+            <a href="./creerPersonnel.html">Créer</a>
+        </div>
+        <div class="bouton">
+            <a href="./modifierPersonnel.html">Modifier</a>
+        </div>
+        <div class="bouton">
+            <a href="./consulterPersonnel.html">Consulter</a>
+        </div>
+        <div class="bouton">
+            <a href="./enregistrerHoraires.html">Horaires</a>
+        </div>
+    </div>
+
+    <div class="formulaire">
+        <form action="./creerPersonnel.html" method="post">
+            <div class="colonne">
+                <div id="identite">
+                    <h3>Informations d'identité</h3>
+                    <div id="civilite">
+                        <label>Civilité <br></label>
+                        <input type="checkbox" id="monsieur">
+                        <label for="monsieur">M.</label>
+                        <input type="checkbox" id="madame">
+                        <label for="madame">Mme.</label>
+                    </div>
+                    <div id="nom">
+                        <label>Nom <br></label>
+                        <input type="text" placeholder="PILAF" required>
+                    </div>
+                    <div id="prenom">
+                        <label>Prénom <br></label>
+                        <input type="text" placeholder="Didier" required>
+                    </div>
+                    <div id="telephone">
+                        <label>Téléphone <br></label>
+                        <input type="tel" placeholder="01 02 03 04 05" required>
+                    </div>
+                    <div id="mail">
+                        <label>Adresse e-mail <br></label>
+                        <input type="email" placeholder="didier.pilaf@gmail.com" required>
+                    </div>
+                </div>
+                <div id="poste">
+                    <h3>Informations sur le poste</h3>
+                    <div id="poste_occupe">
+                        <label>Poste occupé <br></label>
+                        <input type="search" list="postes" placeholder="Directeur" required>
+                        <datalist id="postes">
+                            <option value="Directeur"></option>
+                            <option value="Secrétaire"></option>
+                            <option value="Directeur Commercial"></option>
+                            <option value="Caissier(-ère)"></option>
+                            <option value="Saisonnier"></option>
+                        </datalist>
+                    </div>
+                    <div id="duree">
+                        <label>Type de contrat <br></label>
+                        <select>
+                            <option>CDI</option>
+                            <option>CDD</option>
+                            <option>Intérim</option>
+                            <option>Saisonnier</option>
+                        </select>
+                    </div>
+                    <div id="date_fin">
+                        <label>Date de fin (si CDD) <br></label>
+                        <input type="date">
+                    </div>
+                    <div class="duree_travail">
+                        <label>Durée hebdomadaire <br></label>
+                        <input type="number" placeholder="35" required>
+                    </div>
+                    <div id="salaire">
+                        <label>Salaire <br></label>
+                        <input type="number" placeholder="1 500" required>
+                    </div>
+                </div>
+                <div id="adresse">
+                    <h3>Informations d'adresse</h3>
+                    <div id="numero">
+                        <label>Numéro <br></label>
+                        <input type="number" placeholder="25" required>
+                    </div>
+                    <div id="adresse1">
+                        <label>Adresse <br></label>
+                        <input type="text" placeholder="rue de pilaf" required>
+                    </div>
+                    <div id="code_postal">
+                        <label>Code Postal <br></label>
+                        <input type="number" placeholder="95000" required>
+                    </div>
+                    <div id="ville">
+                        <label>Ville <br></label>
+                        <input type="text" placeholder="Paris" required>
+                    </div>
+                    <div id="pays">
+                        <label>Pays <br></label>
+                        <input type="search" list="liste_pays" placeholder="France" required>
+                        <datalist id="liste_pays">
+                            <option value="Angleterre"></option>
+                            <option value="Espagne"></option>
+                            <option value="France"></option>
+                        </datalist>
+                    </div>
+                    <div id="enregistrer">
+                        <button type="submit">Enregistrer</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

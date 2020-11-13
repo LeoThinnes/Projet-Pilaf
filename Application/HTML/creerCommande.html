@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Société Pilaf</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/creerCommande.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/fonts.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="titre">Société PILAF</h1>
+      <div class="icons">
+          <a href="./menu.html"><img src="../Images/home-with-hearth.png" alt="Retour" title="Menu Principal"></a>    
+          <a href="../index.html"><img src="../Images/black-user-shape.png" alt="Déconnexion" title="Déconnexion"></a>
+      </div>
+  </header>
+
+  <div class="menu">
+    <h2>Stock ></h2>
+    <div class="bouton" id="creer">
+        <a href="./creerCommande.html">Créer Commande</a>
+    </div>
+    <div class="bouton">
+        <a href="./modifierCommande.html">Modifier commande</a>
+    </div>
+    <div class="bouton">
+        <a href="./consulterCommandes.html">Consulter Commande</a>
+    </div>
+    <div class="bouton">
+        <a href="./receptionnerLivraison.html">Réceptionner Livraison</a>
+    </div>
+    <div class="bouton">
+        <a href="./enregistrerMouvementStock.html">Mouvement Stock</a>
+    </div>
+    <div class="bouton">
+        <a href="./consulterStock.html">Consulter Stock</a>
+    </div>
+</div>
+
+  <div class="container">
+    <form class="test" action="./creerCommande.html" method="post">
+      <div id="titre">
+        <h2>CRÉER UNE COMMANDE FOURNISSEUR</h2>
+      </div>
+      <div id="ligneProduit">
+
+        <div id="Ref">
+          <label>Fournisseur : <br></label>
+          <input type="search" required list="data" name="ref_prod" title="Veuillez saisir la référence du produit" placeholder="Biodis">
+          <datalist id="data">
+            <option>Biodis</option>
+          </datalist>
+        </div>
+        <div id="Lib">
+          <label>Référence produit : <br></label>
+          <input type="text" placeholder="001">
+        </div>
+        <div id="Quantité">
+          <label>Nom du produit : <br>Fraise</label>
+        </div>
+        <div id="PrixU">
+          <label>Quantité : <br></label>
+          <input type="number" min="1" placeholder="1">
+        </div>
+        <div id="PrixHT">
+          <label>Prix U. : <br>2.00</label>
+        </div>
+        <div id="PrixTTC">
+          <label>Prix HT : <br>2.00</label>
+        </div>
+        <div id="taux">
+          <label>TVA appliquée : <br>5,5%</label>
+        </div>
+        <div id="PrixTTC2">
+          <label>Prix TTC : <br>2.11</label>
+        </div>
+
+      </div>
+
+      <div id="Ajout">
+        <input type="button" value="+">
+      </div>
+
+      <div id="ligneTotaux">
+
+        <div id="TotHT">
+          <label>Total HT : <br>2.00</label>
+        </div>
+        <div id="TotTaxes">
+          <label>Total Taxes : <br>0.11</label>
+        </div>
+        <div id="TotTTC">
+          <label>Total TTC : <br>2.11</label>
+        </div>
+      </div>
+      <div id="btn_enreg">
+        <input type="submit" value="Enregistrer">
+      </div>
+    </form>
+    </div>
+  </body>
+</html>

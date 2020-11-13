@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Société PILAF</title>
+    <link rel="stylesheet" href="../CSS/fonts.css">
+    <link rel="stylesheet" href="../CSS/creerClient.css">
+</head>
+<body>
+    <header>
+        <h1 class="titre">Société PILAF</h1>
+        <div class="icons">
+            <a href="./menuSalarie.html"><img src="../Images/home-with-hearth.png" alt="Retour" title="Menu Principal"></a>    
+            <a href="../index.html"><img src="../Images/black-user-shape.png" alt="Déconnexion" title="Déconnexion"></a>
+        </div>
+    </header>
+
+    <div class="menu">
+        <h2>Clients ></h2>
+        <div class="bouton" id="creer">
+            <a href="./creerClientSalarie.html">Créer</a>
+        </div>
+        <div class="bouton">
+            <a href="./enregistrerCarteSalarie.html">Fidélité</a>
+        </div>
+    </div>
+
+    <div class="formulaire">
+        <form action="./creerClientSalarie.html" method="post">
+            <div class="colonne">
+                <div id="identite">
+                    <h3>Informations d'identité</h3>
+                    <div id="civilite">
+                        <label>Civilité <br></label>
+                        <input type="checkbox" id="monsieur">
+                        <label for="monsieur">M.</label>
+                        <input type="checkbox" id="madame">
+                        <label for="madame">Mme.</label>
+                    </div>
+                    <div id="nom">
+                        <label>Nom <br></label>
+                        <input type="text" placeholder="CLIENT" required>
+                    </div>
+                    <div id="prenom">
+                        <label>Prénom <br></label>
+                        <input type="text" placeholder="Client" required>
+                    </div>
+                </div>
+                <div id="contact">
+                    <h3>Informations de contact</h3>
+                    <div id="telephone">
+                        <label>Téléphone <br></label>
+                        <input type="tel" pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$" placeholder="01 02 03 04 05" required>
+                    </div>
+                    <div id="mail">
+                        <label>Adresse e-mail <br></label>
+                        <input type="email" placeholder="client.client@client.fr" required>
+                    </div>
+                    <div id="choix_contact">
+                        <label>Quel moyen de communication preférez-vous ? <br></label>
+                        <input type="checkbox" id="tel" required>
+                        <label for="tel">SMS</label>
+                        <input type="checkbox" id="e-mail">
+                        <label for="e-mail">E-Mail</label>
+                    </div>
+                </div>
+                <div id="adresse">
+                    <h3>Informations d'adresse</h3>
+                    <div id="numero">
+                        <label>Numéro <br></label>
+                        <input type="number" placeholder="25" required>
+                    </div>
+                    <div id="adresse1">
+                        <label>Adresse <br></label>
+                        <input type="text" placeholder="rue des clients" required>
+                    </div>
+                    <div id="code_postal">
+                        <label>Code Postal <br></label>
+                        <input type="text" pattern="[0-9]{5}" placeholder="95000" required>
+                    </div>
+                    <div id="ville">
+                        <label>Ville <br></label>
+                        <input type="text" placeholder="Paris" required>
+                    </div>
+                    <div id="pays">
+                        <label>Pays <br></label>
+                        <input type="search" list="liste_pays" placeholder="France" required>
+                        <datalist id="liste_pays">
+                            <option value="Angleterre"></option>
+                            <option value="Espagne"></option>
+                            <option value="France"></option>
+                        </datalist>
+                    </div>
+                    <div id="enregistrer">
+                        <button type="submit">Enregistrer</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

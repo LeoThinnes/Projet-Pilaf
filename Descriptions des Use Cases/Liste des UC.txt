@@ -1,0 +1,60 @@
+-----------------
+-----A FAIRE-----
+-----------------
+
+Maquettes pour :
+Réceptionner une livraison
+Enregistrer un mouvement de stock
+Consulter les stocks par critères
+Consulter une commande
+Créer un article
+
+------------------
+-------FAIT-------
+------------------
+
+
+
+-- CLIENT --
+Créer un client - FAIT - MAQUETTE OK
+Enregistrer une carte de fidélité - FAIT - MAQUETTE OK
+
+-- FOURNISSEUR --
+Créer un fournisseur - FAIT - MAQUETTE OK
+Créer un catalogue produit fournisseur - FAIT - MAQUETTE OK (1 maquette pour 2)
+Modifier un fournisseur - FAIT - MAQUETTE OK
+Consulter un fournisseur - FAIT - MAQUETTE OK
+Consulter le catalogue fournisseur - FAIT - MAQUETTE OK (1 maquette pour 2)
+
+-- STOCK --
+Réceptionner une livraison - FAIT
+Enregistrer un mouvement de stock - FAIT
+Créer une commande fournisseur - FAIT - MAQUETTE OK
+Modifier une commande - FAIT - MAQUETTE OK
+Consulter une commande - FAIT
+Consulter les stocks par critères - FAIT
+
+-- VENTE --
+Enregistrer une vente - FAIT - MAQUETTE OK
+
+-- ARTICLE --
+Créer un article  - FAIT
+Modifier un article  - FAIT - MAQUETTE OK
+Consulter un article  - FAIT - MAQUETTE OK
+
+-- ADMINISTRATION --
+Consulter les statistiques - FAIT - MAQUETTE OK
+Consulter les factures - FAIT - MAQUETTE OK
+
+-- BANQUE --
+Payer une facture par virement automatique - FAIT - MAQUETTE OK (1 maquette pour 2)
+Consulter les virements - FAIT - MAQUETTE OK (1 maquette pour 2)
+
+-- PERSONNEL --
+Mettre à jour les informations d'un employé - FAIT - MAQUETTE OK
+Consulter les informations d'un employé - FAIT - MAQUETTE OK
+Enregistrer un horaire de travail  - FAIT - MAQUETTE OK
+Consulters les horaires  - FAIT - MAQUETTE OK
+
+
+

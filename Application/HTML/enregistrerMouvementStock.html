@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Société PILAF</title>
+    <link rel="stylesheet" href="../CSS/fonts.css">
+    <link rel="stylesheet" href="../CSS/creerArticle.css">
+</head>
+<body>
+    <header>
+        <h1 class="titre">Société PILAF</h1>
+        <div class="icons">
+            <a href="./menu.html"><img src="../Images/home-with-hearth.png" alt="Retour" title="Menu Principal"></a>    
+            <a href="../index.html"><img src="../Images/black-user-shape.png" alt="Déconnexion" title="Déconnexion"></a>
+        </div>
+    </header>
+
+    <div class="menu">
+        <h2>Stock ></h2>
+        <div class="bouton">
+            <a href="./creerCommande.html">Créer Commande</a>
+        </div>
+        <div class="bouton">
+            <a href="./modifierCommande.html">Modifier commande</a>
+        </div>
+        <div class="bouton">
+            <a href="./consulterCommandes.html">Consulter Commande</a>
+        </div>
+        <div class="bouton">
+            <a href="./receptionnerLivraison.html">Réceptionner Livraison</a>
+        </div>
+        <div class="bouton" id="creer">
+            <a href="./enregistrerMouvementStock.html">Mouvement Stock</a>
+        </div>
+        <div class="bouton">
+            <a href="./consulterStock.html">Consulter Stock</a>
+        </div>
+    </div>
+
+    <div class="formulaire">
+        <form action="./enregistrerMouvementStock.html" method="post">
+            <div class="colonne">
+                <div id="identite">
+                    <h3>Mouvement de stock</h3>
+                    <div id="type">
+                        <label>Produit <br></label>
+                        <input type="search" placeholder="Fraise" required>
+                    </div>
+                    <div id="stock">
+                        <label>Quantité <br></label>
+                        <input type="number" placeholder="1" required>
+                    </div>
+                    <div id="type_mouvement">
+                        <label>Type de mouvement <br></label>
+                        <select>
+                            <option>Entrée</option>
+                            <option>Sortie</option>
+                        </select>
+                    </div>
+                    <div id="motif">
+                        <label>Motif de mouvement <br></label>
+                        <textarea cols="30" rows="10" placeholder="Achat de marchandise"></textarea>
+                    </div>
+                    <div id="enregistrer">
+                        <button type="submit">Enregistrer</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

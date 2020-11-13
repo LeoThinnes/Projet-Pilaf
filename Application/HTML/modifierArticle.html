@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Société PILAF</title>
+    <link rel="stylesheet" href="../CSS/fonts.css">
+    <link rel="stylesheet" href="../CSS/modifierArticle.css">
+</head>
+<body>
+    <header>
+        <h1 class="titre">Société PILAF</h1>
+        <div class="icons">
+            <a href="./menu.html"><img src="../Images/home-with-hearth.png" alt="Retour" title="Menu Principal"></a>    
+            <a href="../index.html"><img src="../Images/black-user-shape.png" alt="Déconnexion" title="Déconnexion"></a>
+        </div>
+    </header>
+
+    <div class="menu">
+        <h2>Articles ></h2>
+        <div class="bouton">
+            <a href="./creerArticle.html">Créer</a>
+        </div>
+        <div class="bouton" id="creer">
+            <a href="./modifierArticle.html">Modifier</a>
+        </div>
+        <div class="bouton">
+            <a href="./consulterArticle.html">Consulter</a>
+        </div>
+    </div>
+
+    <div class="formulaire">
+        <form action="./modifierArticle.html" method="post">
+            <div id="recherche">
+                <label>Rechercher <br></label>
+                <input type="search" placeholder="Fraise" required>
+            </div>
+            <div class="colonne">
+                <div id="identite">
+                    <h3>Informations du produit</h3>
+                    <div id="ref">
+                        <label>Référence <br></label>
+                        <input type="text" placeholder="001" required>
+                    </div>
+                    <div id="type">
+                        <label>Type <br></label>
+                        <select>  
+                            <option>Fruit</option>
+                            <option>Légume</option>
+                            <option>Produits secs</option>
+                            <option>Boisson</option>
+                        </select>
+                    </div>
+                    <div id="nom">
+                        <label>Nom <br></label>
+                        <input type="text" placeholder="Fraise" required>
+                    </div>
+                    <div id="provenance">
+                        <label>Provenance <br></label>
+                        <input type="text" placeholder="France" required>
+                    </div>
+                    <div id="prix">
+                        <label>Prix Unitaire <br></label>
+                        <input type="number" placeholder="3.50" required>
+                    </div>
+                    <div id="taxe">
+                        <label>Taux de TVA appliqué <br></label>
+                        <select>
+                            <option>2,1%</option>
+                            <option>5,5%</option>
+                            <option>10%</option>
+                            <option>20%</option>
+                        </select>
+                    </div>
+                    <div id="stock">
+                        <label>Quantité de conditionnement <br></label>
+                        <input type="number" placeholder="500" required>
+                        <select>
+                            <option>g</option>
+                            <option>unités</option>
+                            <option>kg</option>
+                        </select>
+                    </div>
+                    <div id="enregistrer">
+                        <button type="submit">Enregistrer</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

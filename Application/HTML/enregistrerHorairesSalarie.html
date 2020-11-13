@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Société PILAF</title>
+    <link rel="stylesheet" href="../CSS/fonts.css">
+    <link rel="stylesheet" href="../CSS/enregistrerHoraires.css">
+</head>
+<body>
+    <header>
+        <h1 class="titre">Société PILAF</h1>
+        <div class="icons">
+            <a href="./menuSalarie.html"><img src="../Images/home-with-hearth.png" alt="Retour" title="Menu Principal"></a>    
+            <a href="../index.html"><img src="../Images/black-user-shape.png" alt="Déconnexion" title="Déconnexion"></a>
+        </div>
+    </header>
+
+    <div class="menu">
+        <h2>Horaires ></h2>
+        <div class="bouton" id="creer">
+            <a href="./enregistrerHoraires.html">Enregistrer</a>
+        </div>
+    </div>
+
+    <div class="formulaire">
+        <form action="./enregistrerHoraires.html" method="post">
+            <div class="colonne">
+                <div id="identite">
+                    <h3>Enregistrement des horaires</h3>
+                    <div id="nom">
+                        <label>Salarié <br>PILAF Didier</label>
+                    </div>
+                    <div id="prenom">
+                        <label>Date <br></label>
+                        <input type="date" required>
+                    </div>
+                    <div id="civilite">
+                        <label>Activité <br></label>
+                        <input type="checkbox" id="monsieur">
+                        <label for="monsieur">Travail</label>
+                        <input type="checkbox" id="madame">
+                        <label for="madame">Congès</label>
+                        <input type="checkbox" id="mell">
+                        <label for="mell">Arrêt Maladie</label>
+                    </div>
+                    <div id="telephone">
+                        <label>Heure de début <br></label>
+                        <input type="time" required>
+                    </div>
+                    <div id="mail">
+                        <label>Heure de fin <br></label>
+                        <input type="time" required>
+                    </div>
+                    <div id="poste_occupe">
+                        <label>Poste occupé <br></label>
+                        <input type="search" list="postes" placeholder="Caissier(-ère)" required>
+                        <datalist id="postes">
+                            <option value="Directeur"></option>
+                            <option value="Secrétaire"></option>
+                            <option value="Directeur Commercial"></option>
+                            <option value="Caissier(-ère)"></option>
+                            <option value="Saisonnier"></option>
+                        </datalist>
+                    </div>
+                    <div id="enregistrer">
+                        <button type="submit">Enregistrer</button>
+                    </div>
+                </div>
+                <div id="poste">
+                    <h3>Consultation des horaires</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Salarié</th>
+                                <th>Date</th>
+                                <th>Heure de début</th>
+                                <th>Heure de fin</th>
+                                <th>Poste occupé</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>PILAF Didier</td>
+                                <td>27/05/2020</td>
+                                <td>8:00</td>
+                                <td>12:30</td>
+                                <td>Caissier(-ère)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

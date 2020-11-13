@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Société PILAF</title>
+    <link rel="stylesheet" href="../CSS/fonts.css">
+    <link rel="stylesheet" href="../CSS/comptes.css">
+</head>
+<body>
+    <header>
+        <h1 class="titre">Société PILAF</h1>
+        <div class="icons">
+            <a href="./menu.html"><img src="../Images/home-with-hearth.png" alt="Retour" title="Menu Principal"></a>    
+            <a href="../index.html"><img src="../Images/black-user-shape.png" alt="Déconnexion" title="Déconnexion"></a>
+        </div>
+    </header>
+
+    <div class="menu">
+        <h2>Administration ></h2>
+        <div class="bouton">
+            <a href="./consulterStatistiques.html">Statistiques</a>
+        </div>
+        <div class="bouton">
+            <a href="./consulterFactures.html">Factures</a>
+        </div>
+        <div class="bouton" id="creer">
+            <a href="./comptes.html">Comptes</a>
+        </div>
+    </div>
+
+    <div class="formulaire">
+        <form action="./enregistrerHoraires.html" method="post">
+            <div class="colonne">
+                <div id="identite">
+                    <h3>Enregistrement d'un compte</h3>
+                    <div id="nom">
+                        <label>Salarié <br></label>
+                        <input type="search" placeholder="PILAF Didier" required>
+                    </div>
+                    <div id="prenom">
+                        <label>Nom d'utilisateur <br></label>
+                        <input type="text" placeholder="PILAF" required>
+                    </div>
+                    <div id="telephone">
+                        <label>Mot de passe <br></label>
+                        <input type="password" placeholder="Mot de passe" required>
+                    </div>
+                    <div id="enregistrer">
+                        <button type="submit">Enregistrer</button>
+                    </div>
+                </div>
+                <div id="poste">
+                    <h3>Consultation des comptes</h3>
+                    <div id="salarie">
+                        <label>Salarié <br></label>
+                        <input type="search" required>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Salarié</th>
+                                <th>Nom d'utilisateur</th>
+                                <th>Options</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>PILAF Didier</td>
+                                <td>PILAF</td>
+                                <td>
+                                    <div class="ligne">
+                                        <a href="#"><img src="../Images/flower-with-dark-petals.png" alt="Modifier" title="Modifier le compte"></a>
+                                        <a href="#"><img src="../Images/waste-bin-with-cover.png" alt="Supprimer" title="Supprimer le compte"></a>
+                                    </div>
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

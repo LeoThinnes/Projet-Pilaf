@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Gotham Ultra';
+    src: url(../Fonts/Gotham-Ultra.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Medium';
+    src: url(../Fonts/Gotham-Medium.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Book';
+    src: url(../Fonts/Gotham-Book.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

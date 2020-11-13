@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Société PILAF</title>
+    <link rel="stylesheet" href="../CSS/fonts.css">
+    <link rel="stylesheet" href="../CSS/enregistrerCarte.css">
+</head>
+<body>
+    <header>
+        <h1 class="titre">Société PILAF</h1>
+        <div class="icons">
+            <a href="./menuSalarie.html"><img src="../Images/home-with-hearth.png" alt="Retour" title="Menu Principal"></a>    
+            <a href="../index.html"><img src="../Images/black-user-shape.png" alt="Déconnexion" title="Déconnexion"></a>
+        </div>
+    </header>
+
+    <div class="menu">
+        <h2>Clients ></h2>
+        <div class="bouton">
+            <a href="./creerClientSalarie.html">Créer</a>
+        </div>
+        <div class="bouton" id="creer">
+            <a href="./enregistrerCarteSalarie.html">Fidélité</a>
+        </div>
+    </div>
+
+    <div class="formulaire">
+        <form action="./enregistrerCarteSalarie.html" method="post">
+            <div class="colonne">
+                <div id="identite">
+                    <h3>Création d'un compte fidélité</h3>
+                    <div id="choix">
+                        <label>Choix du client <br></label>
+                        <input type="search" placeholder="CLIENT Client" required>
+                    </div>
+                    <div id="numero">
+                        <label>Numéro de client <br>051487</label>
+                    </div>
+                    <div id="enregistrer">
+                        <button type="submit">Enregistrer</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

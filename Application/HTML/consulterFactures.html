@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Société PILAF</title>
+    <link rel="stylesheet" href="../CSS/fonts.css">
+    <link rel="stylesheet" href="../CSS/consulterFactures.css">
+</head>
+<body>
+    <header>
+        <h1 class="titre">Société PILAF</h1>
+        <div class="icons">
+            <a href="./menu.html"><img src="../Images/home-with-hearth.png" alt="Retour" title="Menu Principal"></a>    
+            <a href="../index.html"><img src="../Images/black-user-shape.png" alt="Déconnexion" title="Déconnexion"></a>
+        </div>
+    </header>
+
+    <div class="menu">
+        <h2>Administration ></h2>
+        <div class="bouton">
+            <a href="./consulterStatistiques.html">Statistiques</a>
+        </div>
+        <div class="bouton" id="creer">
+            <a href="./consulterFactures.html">Factures</a>
+        </div>
+        <div class="bouton">
+            <a href="./comptes.html">Comptes</a>
+        </div>
+    </div>
+
+    <div class="ligne">
+        <div class="recherche">
+            <label>Rechercher par numéro <br></label>
+            <input type="search" placeholder="0526">
+        </div>
+        <div class="recherche">
+            <label>Rechercher par fournisseur <br></label>
+            <input type="search" placeholder="Biodis">
+        </div>
+        <div class="recherche">
+            <label>Rechercher par date <br></label>
+            <input type="date">
+        </div>
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <th>Numéro</th>
+                <th>Fournisseur</th>
+                <th>Date</th>
+                <th>Montant (HT)</th>
+                <th>Montant (TTC)</th>
+                <th>Récapitulatif</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0526</td>
+                <td>Biodis</td>
+                <td>27/05/2020</td>
+                <td>500</td>
+                <td>600</td>
+                <td>
+                    <a href="#"><img src="../Images/1200px-PDF_file_icon.svg.webp" alt="PDF" title="Récapitulatif en PDF"></a>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

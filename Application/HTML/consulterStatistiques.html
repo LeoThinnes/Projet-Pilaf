@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Société PILAF</title>
+    <link rel="stylesheet" href="../CSS/fonts.css">
+    <link rel="stylesheet" href="../CSS/consulterStatistiques.css">
+</head>
+<body>
+    <header>
+        <h1 class="titre">Société PILAF</h1>
+        <div class="icons">
+            <a href="./menu.html"><img src="../Images/home-with-hearth.png" alt="Retour" title="Menu Principal"></a>    
+            <a href="../index.html"><img src="../Images/black-user-shape.png" alt="Déconnexion" title="Déconnexion"></a>
+        </div>
+    </header>
+
+    <div class="menu">
+        <h2>Administration ></h2>
+        <div class="bouton" id="creer">
+            <a href="./consulterStatistiques.html">Statistiques</a>
+        </div>
+        <div class="bouton">
+            <a href="./consulterFactures.html">Factures</a>
+        </div>
+        <div class="bouton">
+            <a href="./comptes.html">Comptes</a>
+        </div>
+    </div>
+
+    <div class="ligne">
+        <div class="recherche">
+            <label>Rechercher par date <br></label>
+            <input type="date">
+        </div>
+        <div class="recherche">
+            <label>Rechercher par produit <br></label>
+            <input type="search" placeholder="Fraise">
+        </div>
+        <div class="recherche">
+            <label>Rechercher par salarié <br></label>
+            <input type="search" placeholder="PILAF">
+        </div>
+    </div>
+    <div class="ligne">
+        <div class="stat">
+            <h3>Nombre de ventes</h3>
+            <h4>1</h4>
+        </div>
+        <div class="stat">
+            <h3>Nombre de produits vendus</h3>
+            <h4>5</h4>
+        </div>
+        <div class="stat">
+            <h3>Chiffre d'Affaires</h3>
+            <h4>17.50 €</h4>
+        </div>
+        <div class="stat">
+            <h3>Meilleur salarié</h3>
+            <h4>PILAF Didier</h4>
+        </div>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Numéro de vente</th>
+                <th>Vendeur</th>
+                <th>Produit</th>
+                <th>Quantité</th>
+                <th>Montant (HT)</th>
+                <th>Montant (TTC)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>27/05/2020</td>
+                <td>0541</td>
+                <td>PILAF Didier</td>
+                <td>Fraise</td>
+                <td>5</td>
+                <td>17.5</td>
+                <td>21</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

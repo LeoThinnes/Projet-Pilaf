@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Société Pilaf</title>
+  <link rel="stylesheet" type="text/css" href="./CSS/styleConnexion.css">
+  <link rel="stylesheet" type="text/css" href="./CSS/fonts.css">
+</head>
+<body>
+  <header>
+    <h1>Société PILAF</h1>
+  </header>
+  <div class="container">
+    <form class="test" action="./HTML/menu.html" method="post">
+      <div id="titre">
+        <h2>CONNEXION</h2>
+      </div>
+      <div id="Nom">
+        <label>Nom : <br></label>
+        <input type="text" placeholder=" ex : Dupont Didier" required name="user_nom" title="Veuillez saisir votre nom">
+      </div>
+      <div id="Mdp">
+        <label>Mot de passe : <br></label>
+        <input type="password" placeholder=" ex : VotreMotDePasse" required name="user_mdp" title="Veuillez saisir votre mot de passe" >
+      </div>
+      <div id="btn_choix">
+        <div class="bouton">
+          <a href="./HTML/menuSalarie.html">Employé</a>
+        </div>
+        <div class="bouton">
+          <a href="./HTML/menu.html">Administrateur</a>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

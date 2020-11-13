@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Société PILAF</title>
+    <link rel="stylesheet" href="../CSS/fonts.css">
+    <link rel="stylesheet" href="../CSS/consulterFournisseur.css">
+</head>
+<body>
+    <header>
+        <h1 class="titre">Société PILAF</h1>
+        <div class="icons">
+            <a href="./menu.html"><img src="../Images/home-with-hearth.png" alt="Retour" title="Menu Principal"></a>    
+            <a href="../index.html"><img src="../Images/black-user-shape.png" alt="Déconnexion" title="Déconnexion"></a>
+        </div>
+    </header>
+
+    <div class="menu">
+        <h2>Fournisseurs ></h2>
+        <div class="bouton">
+            <a href="./creerFournisseur.html">Créer</a>
+        </div>
+        <div class="bouton">
+            <a href="./modifierFournisseur.html">Modifier</a>
+        </div>
+        <div class="bouton" id="creer">
+            <a href="./consulterFournisseur.html">Consulter</a>
+        </div>
+        <div class="bouton">
+            <a href="./consulterCatalogue.html">Catalogue</a>
+        </div>
+    </div>
+
+    <div id="recherche">
+        <label>Rechercher <br></label>
+        <input type="search" placeholder="Biodis">
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Nom de la société</th>
+                <th>Secteur</th>
+                <th>Contact</th>
+                <th>Adresse</th>
+                <th>Catalogue</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>SA</td>
+                <td>Biodis</td>
+                <td>Grossiste</td>
+                <td>Monsieur FRANCK Edouard</td>
+                <td>17 rue Saint Exupéry – 34430 SAINT JEAN DE VEDAS</td>
+                <td><a href="./consulterCatalogue.html"><img src="../Images/plus.png" alt="Ajouter" title="Ajouter un catalogue"></a></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
